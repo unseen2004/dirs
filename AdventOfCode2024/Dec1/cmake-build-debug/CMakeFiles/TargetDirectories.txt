@@ -1,0 +1,3 @@
+/home/maks/Programming/RandomThings/AdventOfCode2024/Dec1/cmake-build-debug/CMakeFiles/Dec1.dir
+/home/maks/Programming/RandomThings/AdventOfCode2024/Dec1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/maks/Programming/RandomThings/AdventOfCode2024/Dec1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
