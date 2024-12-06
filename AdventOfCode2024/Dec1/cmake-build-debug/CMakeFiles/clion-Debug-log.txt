@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /home/maks/Programming/RandomThings/AdventOfCode2024/Dec1 Select CMakeLists.txt
