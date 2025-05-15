@@ -1,1 +1,1 @@
-/home/maks/Programming/RandomThings/rust_cli/target/debug/librust.rlib: /home/maks/Programming/RandomThings/rust_cli/src/config.rs /home/maks/Programming/RandomThings/rust_cli/src/lib.rs /home/maks/Programming/RandomThings/rust_cli/src/opts.rs
+/home/maks/Programming/RandomThings/rust_cli/target/debug/librust.rlib: /home/maks/Programming/RandomThings/rust_cli/src/config.rs /home/maks/Programming/RandomThings/rust_cli/src/lib.rs /home/maks/Programming/RandomThings/rust_cli/src/opts.rs /home/maks/Programming/RandomThings/rust_cli/src/projector.rs

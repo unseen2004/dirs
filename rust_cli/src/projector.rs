@@ -1,6 +1,6 @@
 use std::{collections::HashMap, path::PathBuf};
 use serde::{Serialize, Deserialize};
-use crate::config::Config;
+use anyhow::Result;
 
 #[derive(Debug, Serialize, Deserialize)]
 struct Data {
@@ -8,19 +8,20 @@ struct Data {
 }
 
 pub struct Projector {
-    config: Config,
+    config: PathBuf,
+    pwd: PathBuf,
     data: Data,
 }
 
 fn default_data() -> Data {
     return Data {
-        projector: HashMap::new(),  // Fixed: semicolon to comma
+        projector: HashMap::new(),
     };
 }
 
 impl Projector {
      pub fn get_value_all(&self) -> HashMap<String, String> {
-        let mut curr = Some(self.config.pwd.as_path());
+        let mut curr = Some(self.pwd.as_path());
         let mut paths = vec![];
         while let Some(p) = curr {
             paths.push(p);
@@ -30,7 +31,6 @@ impl Projector {
         let mut out = HashMap::new();
         for path in paths.into_iter().rev() {
             if let Some(map) = self.data.projector.get(path) {
-                // Fixed: Clone keys and values for correct return type
                 for (k, v) in map.iter() {
                     out.insert(k.clone(), v.clone());
                 }
@@ -41,11 +41,10 @@ impl Projector {
     }
 
     pub fn get_value(&self, key: &str) -> Option<&String> {
-        let mut curr = Some(self.config.pwd.as_path());
+        let mut curr = Some(self.pwd.as_path());
         let mut out = None;
 
         while let Some(p) = curr {
-            // Fixed: Type annotation for get() method
             if let Some(dir) = self.data.projector.get(&p.to_path_buf()) {
                 if let Some(value) = dir.get(key) {
                     out = Some(value);
@@ -59,21 +58,34 @@ impl Projector {
 
     pub fn set_value(&mut self, key: String, value: String) {
         self.data.projector 
-            .entry(self.config.pwd.clone())
+            .entry(self.pwd.clone())
             .or_default() 
             .insert(key, value);
     }
 
     pub fn remove_value(&mut self, key: &str) {
         self.data.projector 
-            .entry(self.config.pwd.clone())
+            .entry(self.pwd.clone())
             .or_default() 
-            .remove(key);  // Fixed: use remove() instead of insert()
+            .remove(key);  
     }
 
-    pub fn from_config(config: Config) -> Self {
-        if std::fs::metadata(&config.config).is_ok() {
-            let contents = std::fs::read_to_string(&config.config);
+    pub fn save(&self) -> Result<()> {
+        if let Some(p) = self.config.parent() {
+            if !std::fs::metadata(&p).is_ok(){
+                std::fs::create_dir_all(p)?;
+            }
+        }
+        
+        let contents = serde_json::to_string(&self.data)?;
+        std::fs::write(&self.config, contents)?;
+
+        return Ok(());
+    }
+
+    pub fn from_config(config: PathBuf, pwd: PathBuf) -> Self {
+        if std::fs::metadata(&config).is_ok() {
+            let contents = std::fs::read_to_string(&config);
             let contents = contents.unwrap_or(
                 String::from("{\"projector\":{}}"));
             let data = serde_json::from_str(&contents);
@@ -81,12 +93,14 @@ impl Projector {
 
             return Projector {
                 config,
+                pwd,
                 data,
             }
         }
 
         return Projector {
             config,
+            pwd,
             data: default_data(),
         }
     }
@@ -95,10 +109,8 @@ impl Projector {
 #[cfg(test)]
 mod test {
     use super::*;
-    use crate::config::{Config, Operation};
     use std::{path::PathBuf, collections::HashMap};
 
-    // Fixed: Replace hashmap! macro with HashMap construction function
     fn get_data() -> HashMap<PathBuf, HashMap<String, String>> {
         let mut data = HashMap::new();
         
@@ -120,11 +132,8 @@ mod test {
 
     fn get_projector(pwd: PathBuf) -> Projector {
         return Projector {
-            config: Config {
-                pwd,
-                config: PathBuf::from(""),
-                operation: crate::config::Operation::Print(None),
-            },
+            config: PathBuf::from(""),
+            pwd,
             data: Data {
                 projector: get_data()
             }
