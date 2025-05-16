@@ -19,7 +19,7 @@ func main(){
         panic(err)
     }
 
-    app.Logger.Println("running")
+    defer app.DB.Close()
     
     r := routes.SetupRoutes(app)
     server := &http.Server{
