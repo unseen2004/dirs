@@ -28,18 +28,18 @@ use std::env;
 
 impl Config {
     pub fn build(args: &[String]) -> Result<Config, &'static str> {
-        if args.len() < 3 {
-            return Err("not enough arguments");
-        }
+        let mut args = args.iter();
 
-        let query = args[1].clone();
-        let file_path = args[2].clone();
+        args.next();
+
+        let query = args.next().ok_or("not enough arguments")?;
+        let file_path = args.next().ok_or("not enough arguments")?;
 
         let ignore_case = env::var("IGNORE_CASE").is_ok();
 
         Ok(Config {
-            query,
-            file_path,
+            query: query.to_string(),
+            file_path: file_path.to_string(),
             ignore_case,
         })
     }
