@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/bst_demo.dir/link.d CMakeFiles/bst_demo.dir/main_demo.cpp.o CMakeFiles/bst_demo.dir/BST.cpp.o -o bst_demo

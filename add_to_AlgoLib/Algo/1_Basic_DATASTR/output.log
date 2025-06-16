@@ -1,0 +1,282 @@
+                   -`                   maks@archlinux
+                  .o+`                  󰍴󰍴󰍴󰍴󰍴󰍴󰍴󰍴󰍴󰍴󰍴󰍴󰍴󰍴
+                 `ooo/                   OS-> Linux
+                `+oooo:                  ├ -> Arch Linux x86_64
+               `+oooooo:                 ├ -> 6.13.5-zen1-1-zen
+               -+oooooo+:                ├󰏗 -> 1278 (pacman)
+             `/:-:++oooo+:               └ -> zsh 5.9
+            `/++++/+++++++:
+           `/++++++++++++++:             DE/WM-> bspwm
+          `/+++ooooooooooooo/`           └ -> tmux
+         ./ooosssso++osssssso+`
+        .oossssso-````/ossssss+`         PC-> Inspiron 16 5635 1.9.0
+       -osssssso.      :ssssssso.        ├󰍛 -> AMD Ryzen 7 7730U with Radeon Graphics (16) @ 4.5GHz [37.0°C]
+      :osssssss/        osssso+++.       ├󰍹 -> AMD ATI 03:00.0 Barcelo
+     /ossssssss/        +ssssooo/-       ├ -> 8.22GiB / 14.90GiB (55%)
+   `/ossssso+/:-        -:/+osssso+-     ├󰅐 -> 1h
+  `+sso+:-`                 `.-/+oso:    └ -> 1920x1200
+ `++:.                           `-/+/
+ .`                                 `/  63% [Discharging]
+
+
+
+
+
+❯ cd Programming/Studies/Algo/lab1/build/
+❯ ls
+CMakeCache.txt  CMakeFiles  cmake_install.cmake  exec1  exec2  exec3  Makefile
+❯ ./exec1
+Enqueuing into Queue:
+Enqueued: 1
+Enqueued: 2
+Enqueued: 3
+Enqueued: 4
+Enqueued: 5
+Enqueued: 6
+Enqueued: 7
+Enqueued: 8
+Enqueued: 9
+Enqueued: 10
+Enqueued: 11
+Enqueued: 12
+Enqueued: 13
+Enqueued: 14
+Enqueued: 15
+Enqueued: 16
+Enqueued: 17
+Enqueued: 18
+Enqueued: 19
+Enqueued: 20
+Enqueued: 21
+Enqueued: 22
+Enqueued: 23
+Enqueued: 24
+Enqueued: 25
+Enqueued: 26
+Enqueued: 27
+Enqueued: 28
+Enqueued: 29
+Enqueued: 30
+Enqueued: 31
+Enqueued: 32
+Enqueued: 33
+Enqueued: 34
+Enqueued: 35
+Enqueued: 36
+Enqueued: 37
+Enqueued: 38
+Enqueued: 39
+Enqueued: 40
+Enqueued: 41
+Enqueued: 42
+Enqueued: 43
+Enqueued: 44
+Enqueued: 45
+Enqueued: 46
+Enqueued: 47
+Enqueued: 48
+Enqueued: 49
+Enqueued: 50
+
+Dequeuing from Queue:
+Peek: 1
+Peek: 2
+Peek: 3
+Peek: 4
+Peek: 5
+Peek: 6
+Peek: 7
+Peek: 8
+Peek: 9
+Peek: 10
+Peek: 11
+Peek: 12
+Peek: 13
+Peek: 14
+Peek: 15
+Peek: 16
+Peek: 17
+Peek: 18
+Peek: 19
+Peek: 20
+Peek: 21
+Peek: 22
+Peek: 23
+Peek: 24
+Peek: 25
+Peek: 26
+Peek: 27
+Peek: 28
+Peek: 29
+Peek: 30
+Peek: 31
+Peek: 32
+Peek: 33
+Peek: 34
+Peek: 35
+Peek: 36
+Peek: 37
+Peek: 38
+Peek: 39
+Peek: 40
+Peek: 41
+Peek: 42
+Peek: 43
+Peek: 44
+Peek: 45
+Peek: 46
+Peek: 47
+Peek: 48
+Peek: 49
+Peek: 50
+Queue error: Queue is empty
+
+Pushing onto Stack:
+Pushed: 1
+Pushed: 2
+Pushed: 3
+Pushed: 4
+Pushed: 5
+Pushed: 6
+Pushed: 7
+Pushed: 8
+Pushed: 9
+Pushed: 10
+Pushed: 11
+Pushed: 12
+Pushed: 13
+Pushed: 14
+Pushed: 15
+Pushed: 16
+Pushed: 17
+Pushed: 18
+Pushed: 19
+Pushed: 20
+Pushed: 21
+Pushed: 22
+Pushed: 23
+Pushed: 24
+Pushed: 25
+Pushed: 26
+Pushed: 27
+Pushed: 28
+Pushed: 29
+Pushed: 30
+Pushed: 31
+Pushed: 32
+Pushed: 33
+Pushed: 34
+Pushed: 35
+Pushed: 36
+Pushed: 37
+Pushed: 38
+Pushed: 39
+Pushed: 40
+Pushed: 41
+Pushed: 42
+Pushed: 43
+Pushed: 44
+Pushed: 45
+Pushed: 46
+Pushed: 47
+Pushed: 48
+Pushed: 49
+Pushed: 50
+
+Popping from Stack:
+Peek: 50
+Peek: 49
+Peek: 48
+Peek: 47
+Peek: 46
+Peek: 45
+Peek: 44
+Peek: 43
+Peek: 42
+Peek: 41
+Peek: 40
+Peek: 39
+Peek: 38
+Peek: 37
+Peek: 36
+Peek: 35
+Peek: 34
+Peek: 33
+Peek: 32
+Peek: 31
+Peek: 30
+Peek: 29
+Peek: 28
+Peek: 27
+Peek: 26
+Peek: 25
+Peek: 24
+Peek: 23
+Peek: 22
+Peek: 21
+Peek: 20
+Peek: 19
+Peek: 18
+Peek: 17
+Peek: 16
+Peek: 15
+Peek: 14
+Peek: 13
+Peek: 12
+Peek: 11
+Peek: 10
+Peek: 9
+Peek: 8
+Peek: 7
+Peek: 6
+Peek: 5
+Peek: 4
+Peek: 3
+Peek: 2
+Peek: 1
+Stack error: Stack is empty
+❯ ./exec2
+List1 after insertion: 44 91 97 61 95 52 28 42 32 63
+List2 after insertion: 38 55 67 32 65 88 70 92 42 24
+Merging List2 into List1
+44 91 97 61 95 52 28 42 32 63 38 55 67 32 65 88 70 92 42 24
+4689.17
+9441.68
+❯ ./exec3
+Inserting into list1:
+Inserted: 56
+Inserted: 72
+Inserted: 91
+Inserted: 98
+Inserted: 67
+Inserted: 75
+Inserted: 62
+Inserted: 70
+Inserted: 75
+Inserted: 89
+56 72 91 98 67 75 62 70 75 89
+Inserting into list2:
+Inserted: 74
+Inserted: 39
+Inserted: 38
+Inserted: 92
+Inserted: 71
+Inserted: 74
+Inserted: 97
+Inserted: 55
+Inserted: 74
+Inserted: 44
+74 39 38 92 71 74 97 55 74 44
+Merging list2 into list1
+56 72 91 98 67 75 62 70 75 89 74 39 38 92 71 74 97 55 74 44
+Generating random numbers for T:
+Inserting into L:
+Searching for elements in T:
+Average comparisons for found elements: 4934.72
+Searching for random elements:
+Average comparisons for random elements: 9545.22
+❯ cd ..
+❯ tmux capture-pane -S - -E - -p > output.log
+
+
+

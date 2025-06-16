@@ -1,0 +1,5 @@
+/home/maks/Programming/Studies/Algo/lab1/cmake-build-debug/CMakeFiles/exec1.dir
+/home/maks/Programming/Studies/Algo/lab1/cmake-build-debug/CMakeFiles/exec2.dir
+/home/maks/Programming/Studies/Algo/lab1/cmake-build-debug/CMakeFiles/exec3.dir
+/home/maks/Programming/Studies/Algo/lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/maks/Programming/Studies/Algo/lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

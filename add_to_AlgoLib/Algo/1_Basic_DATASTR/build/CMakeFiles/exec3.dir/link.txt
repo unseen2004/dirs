@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/exec3.dir/link.d CMakeFiles/exec3.dir/src/z3/main.cpp.o -o exec3

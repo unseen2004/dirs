@@ -1,0 +1,38 @@
+# Makefile for building Szymanski algorithm demo
+
+# Compiler
+GNATMAKE = gnatmake
+GNATCLEAN = gnatclean
+
+# Target executable
+TARGET = main
+
+# Source files
+SOURCES = main.adb szymanski_algorithm.ads szymanski_algorithm.adb
+
+# Default target
+all: $(TARGET)
+
+# Build target
+$(TARGET): $(SOURCES)
+	$(GNATMAKE) -P build.gpr $(TARGET)
+
+# Clean target
+clean:
+	$(GNATCLEAN) -P build.gpr
+	rm -rf obj
+	rm -f $(TARGET)
+
+# Run target
+run: $(TARGET)
+	./$(TARGET)
+
+# Help target
+help:
+	@echo "Available targets:"
+	@echo "  all    - Build the program (default)"
+	@echo "  clean  - Clean build artifacts"
+	@echo "  run    - Build and run the program"
+	@echo "  help   - Show this help message"
+
+.PHONY: all clean run help

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/splay_demo.dir/link.d CMakeFiles/splay_demo.dir/main_splay_demo.cpp.o CMakeFiles/splay_demo.dir/Splay.cpp.o -o splay_demo

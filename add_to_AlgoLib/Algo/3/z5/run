@@ -1,0 +1,3 @@
+g++ -std=c++17 -O2 main_task5.cpp QuickSort.cpp DualPivotQuickSort.cpp Select.cpp -o task5_program
+./task5_program
+python3 plot_task5.py

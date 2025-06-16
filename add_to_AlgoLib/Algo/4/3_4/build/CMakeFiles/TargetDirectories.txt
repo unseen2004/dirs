@@ -1,0 +1,4 @@
+/home/maks/Programming/Studies/Algo/4/3_4/build/CMakeFiles/rb_demo.dir
+/home/maks/Programming/Studies/Algo/4/3_4/build/CMakeFiles/rb_experiment.dir
+/home/maks/Programming/Studies/Algo/4/3_4/build/CMakeFiles/edit_cache.dir
+/home/maks/Programming/Studies/Algo/4/3_4/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,11 @@
+cd bst_project
+mkdir build && cd build
+cmake ..
+make
+
+./bst_demo
+
+
+./bst_experiment
+
+python3 plot_results.py

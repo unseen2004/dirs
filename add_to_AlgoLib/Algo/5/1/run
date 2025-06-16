@@ -1,0 +1,1 @@
+g++ -O2 -std=c++17 mst_analysis.cpp -o mst_analysis

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/exec1.dir/src/z1/main.cpp.o -o exec1

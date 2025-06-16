@@ -1,0 +1,19 @@
+-- Build.gpr
+-- GNAT Project file for building the Szymanski algorithm demo
+
+project Build is
+
+   for Source_Dirs use (".");
+   for Object_Dir use "obj";
+   for Exec_Dir use ".";
+   for Main use ("main.adb");
+
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnat2012", "-Wall", "-O2");
+   end Compiler;
+
+   package Binder is
+      for Default_Switches ("Ada") use ("-Es");
+   end Binder;
+
+end Build;

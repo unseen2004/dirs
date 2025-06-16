@@ -1,0 +1,2 @@
+sudo /home/maks/miniconda3/bin/python3 ping.py google.com
+-c 5 -t 3 -q
