@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/lab1.dir/src/z1/main.cpp.o CMakeFiles/lab1.dir/src/z2/main.cpp.o CMakeFiles/lab1.dir/src/z3/main.cpp.o -o lab1

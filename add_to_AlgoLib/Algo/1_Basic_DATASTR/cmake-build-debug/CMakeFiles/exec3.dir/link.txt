@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/exec3.dir/src/z3/main.cpp.o -o exec3

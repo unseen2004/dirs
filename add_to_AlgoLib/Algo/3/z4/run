@@ -1,4 +1,0 @@
-g++ -std=c++17 -O2 main_binary.cpp BinarySearch.cpp -o binary_search_program
-./binary_search_program --batch
-python3 plot_binary.py
-

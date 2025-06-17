@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/exec2.dir/src/z2/main.cpp.o -o exec2

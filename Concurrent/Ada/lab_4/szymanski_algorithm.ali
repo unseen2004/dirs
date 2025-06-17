@@ -1,0 +1,188 @@
+V "GNAT Lib v14"
+P ZX
+
+RN
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_ENUMERATION_MAPS
+RV NO_FIXED_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_PROTECTED_TYPES
+RV NO_RELATIVE_DELAY
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U szymanski_algorithm%b	szymanski_algorithm.adb	276982ea OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_5%s	s-conca5.adb		s-conca5.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+U szymanski_algorithm%s	szymanski_algorithm.ads	d6855676 EE NE OO PK
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20250208104148 76789da1 ada%s
+D a-calend.ads		20250208104148 158a5463 ada.calendar%s
+D a-caldel.ads		20250208104148 9f20b83d ada.calendar.delays%s
+D a-except.ads		20250208104148 e7970cd9 ada.exceptions%s
+D a-inteio.ads		20250208104148 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20250208104148 40018c65 ada.io_exceptions%s
+D a-reatim.ads		20250208104148 d11673fd ada.real_time%s
+D a-stream.ads		20250208104148 119b8fb3 ada.streams%s
+D a-string.ads		20250208104148 90ac6797 ada.strings%s
+D a-sttebu.ads		20250208104148 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20250208104148 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20250208104148 9eaa38c6 ada.tags%s
+D a-textio.ads		20250208104148 34ef47de ada.text_io%s
+D a-tiinio.ads		20250208104148 76699c8f ada.text_io.integer_io%s
+D a-unccon.ads		20250208104148 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20250208104148 9111f9c1 interfaces%s
+D i-c.ads		20250208104148 aac316ce interfaces.c%s
+D i-cstrea.ads		20250208104148 ffd01b9d interfaces.c_streams%s
+D system.ads		20250208104148 14286b0f system%s
+D s-atacco.ads		20250208104148 5868e3ba system.address_to_access_conversions%s
+D s-conca3.ads		20250208104148 8a7a19a2 system.concat_3%s
+D s-conca5.ads		20250208104148 4099d1db system.concat_5%s
+D s-crtl.ads		20250208104148 beb39b9e system.crtl%s
+D s-exctab.ads		20250208104148 91bef6ef system.exception_table%s
+D s-ficobl.ads		20250208104148 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20250208104148 5e131ce0 system.image_i%s
+D s-imgint.ads		20250208104148 67e4edfb system.img_int%s
+D s-linux.ads		20250208104148 34850a8c system.linux%s
+D s-multip.ads		20250208104148 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20250208104148 0a1d1474 system.os_constants%s
+D s-osinte.ads		20250208104148 e4f53740 system.os_interface%s
+D s-parame.ads		20250208104148 3597fc11 system.parameters%s
+D s-putima.ads		20250208104148 17291fe4 system.put_images%s
+D s-secsta.ads		20250208104148 578279f5 system.secondary_stack%s
+D s-soflin.ads		20250208104148 df77073e system.soft_links%s
+D s-stache.ads		20250208104148 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20250208104148 5be75682 system.stack_usage%s
+D s-stalib.ads		20250208104148 1c9580f6 system.standard_library%s
+D s-stoele.ads		20250208104148 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20250208104148 528dde74 system.task_info%s
+D s-taspri.ads		20250208104148 4ec891e7 system.task_primitives%s
+D s-taprop.ads		20250208104148 6eefbe12 system.task_primitives.operations%s
+D s-taskin.ads		20250208104148 ebc4edbe system.tasking%s
+D s-taprob.ads		20250208104148 acd6094d system.tasking.protected_objects%s
+D s-tassta.ads		20250208104148 cca55c94 system.tasking.stages%s
+D s-traent.ads		20250208104148 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20250208104148 fa2a7f59 system.unsigned_types%s
+D s-valspe.ads		20250208104148 b0fcd073 system.val_spec%s
+D s-vaispe.ads		20250208104148 8280550e system.value_i_spec%s
+D s-vauspe.ads		20250208104148 89269ba5 system.value_u_spec%s
+D s-vs_int.ads		20250208104148 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20250208104148 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20250208104148 d9032363 system.wch_con%s
+D szymanski_algorithm.ads  20250615195855 d6855676 szymanski_algorithm%s
+D szymanski_algorithm.adb  20250615195858 33481ae6 szymanski_algorithm%b
+G a e
+G c Z s b [set_flag szymanski_algorithm__atomic_flags 31 17 none]
+G c Z s b [get_flag szymanski_algorithm__atomic_flags 32 16 none]
+G c Z s b [get_all_flags szymanski_algorithm__atomic_flags 33 16 none]
+G c Z s b [all_flags_in_set szymanski_algorithm__atomic_flags 36 16 none]
+G c Z s b [any_flag_in_set szymanski_algorithm__atomic_flags 37 16 none]
+G c Z s b [all_higher_flags_in_set szymanski_algorithm__atomic_flags 38 16 none]
+G c Z s b [atomic_flags__set_flagN szymanski_algorithm 31 7 none]
+G c Z s b [atomic_flags__set_flagP szymanski_algorithm 31 7 none]
+G c Z s b [atomic_flags__get_flagN szymanski_algorithm 32 7 none]
+G c Z s b [atomic_flags__get_flagP szymanski_algorithm 32 7 none]
+G c Z s b [atomic_flags__get_all_flagsN szymanski_algorithm 33 7 none]
+G c Z s b [atomic_flags__get_all_flagsP szymanski_algorithm 33 7 none]
+G c Z s b [atomic_flags__all_flags_in_setN szymanski_algorithm 36 7 none]
+G c Z s b [atomic_flags__all_flags_in_setP szymanski_algorithm 36 7 none]
+G c Z s b [atomic_flags__any_flag_in_setN szymanski_algorithm 37 7 none]
+G c Z s b [atomic_flags__any_flag_in_setP szymanski_algorithm 37 7 none]
+G c Z s b [atomic_flags__all_higher_flags_in_setN szymanski_algorithm 38 7 none]
+G c Z s b [atomic_flags__all_higher_flags_in_setP szymanski_algorithm 38 7 none]
+G c Z s b [process_task szymanski_algorithm 45 14 none]
+G c Z s b [display_state szymanski_algorithm 48 14 none]
+G c Z s s [Tflags_arrayBIP szymanski_algorithm 27 4 none]
+G c Z s s [atomic_flagsVIP szymanski_algorithm 30 4 none]
+G c Z s s [process_taskVIP szymanski_algorithm 45 4 none]
+X 1 ada.ads
+16K9*Ada 20e8 55|4r6 4r23 5r6 5r31
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[14|46] 55|5w10 5r35
+X 13 a-textio.ads
+58K13*Text_IO 785e16 55|4w10 4r27
+515U14*Put 55|195s7 197s10 199s13
+565U14*Put_Line 55|162s16 174s16 188s7 202s7
+X 37 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+X 54 szymanski_algorithm.ads
+4K9*Szymanski_Algorithm 50l5 50e24 55|7b14 205l5 205t24
+7N4*N 10r34
+10I9*Process_Id<short_short_integer> 27r31 31r32 32r31 36r44 37r43 38r46
+. 45r33 48r34 55|12r32 17r31 28r44 30r19 49r43 51r19 62r46 64r19 162r41 174r37
+. 188r28 193r34 195r23 196r16 198r17
+13E9*Process_State 21e5 48r54 55|78r23 193r54 195r54
+14n7*Local_Section{13E9} 55|78r40 86r18 176r33
+15n7*Entry_Protocol_1{13E9} 55|95r33 97r18
+16n7*Entry_Protocol_2{13E9} 55|103r33 105r18
+17n7*Entry_Protocol_3{13E9} 55|120r33 122r18
+18n7*Entry_Protocol_4{13E9} 55|138r33 140r18
+19n7*Critical_Section{13E9} 55|155r33 157r18
+20n7*Exit_Protocol{13E9} 55|165r33 167r18
+24I9*Flag_Value<short_short_integer> 27r46 31r52 32r50 36r68 37r67 38r70
+. 55|12r52 17r50 28r68 49r67 62r70 197r14
+27A9*Flags_Array(24I9)<10I9> 33r37 41r15 48r77 55|22r37 79r21 193r77
+30W19*Atomic_Flags 41E7 42l8 42e20 45r67 55|10b19 74l8 74t20
+31U17 Set_Flag 31>27 31>44 55|12b17 15l11 15t19 99s29 116s29 124s29 142s29
+. 170s29
+31i27 Id{10I9} 55|12b27 14r16
+31i44 Value{24I9} 55|12b44 14r23
+32V16 Get_Flag{24I9} 32>26 55|17b16 20l11 20t19
+32i26 Id{10I9} 55|17b26 19r23
+33V16 Get_All_Flags{27A9} 55|22b16 25l11 25t24 88s44 100s44 117s44 125s44
+. 143s44 158s44 171s44
+36V16 All_Flags_In_Set{boolean} 36>34 36>56 55|28b16 46l11 46t27 109s35 149s35
+36i34 Exclude{10I9} 55|28b34 31r21
+36i56 Valid_Set{24I9} 55|28b56 32r19 37r22
+37V16 Any_Flag_In_Set{boolean} 37>33 37>55 55|49b16 59l11 59t26 131s35
+37i33 Exclude{10I9} 55|49b33 52r20
+37i55 Valid_Set{24I9} 55|49b55
+38V16 All_Higher_Flags_In_Set{boolean} 38>41 38>58 55|62b16 72l11 72t34 132s35
+38i41 Id{10I9} 55|62b41 65r20
+38i58 Valid_Set{24I9} 55|62b58
+41a7 Flags{27A9} 55|14r10 19r17 24r17 34r22 34r40 34r58 39r22 39r40 53r19
+. 53r35 66r19 66r37
+45T14*Process_Task 45d28 45d45 55|77b14 190l8 190t20
+45i28 Id{10I9} 55|89r30 99r38 101r30 109r52 116r38 118r30 124r38 126r30 131r51
+. 132r59 142r38 144r30 149r52 159r30 162r58 170r38 172r30 174r54 188r45
+48U14*Display_State 48>29 48>46 48>69 55|89s16 101s16 118s16 126s16 144s16
+. 159s16 172s16 193b14 203l8 203t21
+48i29 Id{10I9} 55|193b29 195r40
+48e46 State{13E9} 55|193b46 195r74
+48a69 Flags{27A9} 55|193b69 197r31
+X 55 szymanski_algorithm.adb
+30i14 J{54|10I9} 31r16 34r28 34r46 34r64 39r28 39r46
+51i14 J{54|10I9} 52r16 53r25 53r41
+64i14 J{54|10I9} 65r16 66r25 66r43
+78e7 Current_State{54|13E9} 84r15 89r34 95m16 101r34 103m16 118r34 120m16
+. 126r34 138m16 144r34 155m16 159r34 165m16 172r34 176m16
+79a7 Local_Flags{54|27A9} 88m16 89r49 100m16 101r49 117m16 118r49 125m16
+. 126r49 143m16 144r49 158m16 159r49 171m16 172r49
+80i7 Loop_Counter{natural} 179m16 179r32 180r26
+196i11 I{54|10I9} 197r37 198r13
+

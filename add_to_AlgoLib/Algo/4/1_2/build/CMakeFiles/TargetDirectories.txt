@@ -1,4 +1,0 @@
-/home/maks/Programming/Studies/Algo/4/1_2/build/CMakeFiles/bst_demo.dir
-/home/maks/Programming/Studies/Algo/4/1_2/build/CMakeFiles/bst_experiment.dir
-/home/maks/Programming/Studies/Algo/4/1_2/build/CMakeFiles/edit_cache.dir
-/home/maks/Programming/Studies/Algo/4/1_2/build/CMakeFiles/rebuild_cache.dir

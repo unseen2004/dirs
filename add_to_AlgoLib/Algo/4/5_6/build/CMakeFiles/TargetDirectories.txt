@@ -1,4 +1,0 @@
-/home/maks/Programming/Studies/Algo/4/5_6/build/CMakeFiles/splay_demo.dir
-/home/maks/Programming/Studies/Algo/4/5_6/build/CMakeFiles/splay_experiment.dir
-/home/maks/Programming/Studies/Algo/4/5_6/build/CMakeFiles/edit_cache.dir
-/home/maks/Programming/Studies/Algo/4/5_6/build/CMakeFiles/rebuild_cache.dir
