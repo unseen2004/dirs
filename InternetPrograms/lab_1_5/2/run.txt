@@ -1,4 +1,0 @@
-sudo /home/maks/miniconda3/bin/python3 traceroute.py google.com -t 3
--m 3
--p 33435
--q
