@@ -1,0 +1,120 @@
+# === C / C++ ===
+*.out
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.so
+*.exe
+*.dll
+*.dSYM/
+*.stackdump
+*.gch
+*.pch
+*.class
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Conan
+conan.lock
+conanbuild/
+conaninfo.txt
+
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+*.jks
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# === Go ===
+*.exe
+*.test
+*.out
+vendor/
+bin/
+coverage.out
+
+# Go modules
+go.sum
+go.work.sum
+
+# === Node.js / JavaScript / TypeScript ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.cache/
+*.tsbuildinfo
+
+# === IDEs / Editors ===
+# VS Code
+.vscode/
+.history/
+
+# JetBrains (IntelliJ, CLion, etc.)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.cproject
+.settings/
+*.launch
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+*.bak
+
+# === OS / Misc ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+*.log
+
+# === Test Artifacts ===
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+*.profdata
+
+# === Python (in case any scripts exist) ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+
