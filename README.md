@@ -1,0 +1,26 @@
+#Content
+- GlucoApp - simple android note based app
+- Python_jp - python with japanese keywords
+- cocktails-api - api for example coctail website
+- dir_concurrent
+  - dir_cpp
+    - game_of_life
+    - costumer_service
+    - parallel_transform
+    - thread_qs
+  - dir_go
+    - bakery-problem
+    - szymanski-algorithm
+- dir_java
+  - PascalTriangleVisualizer
+  - gui
+  - javaSimplePaint
+  - javafxPascalTraingle
+  - server
+  - shapeCalculator
+- dir_rust
+  - minigrep
+  - rust_cli
+- eccommerce-project
+  - ecommerce-frontend
+  - ecommerce-api
