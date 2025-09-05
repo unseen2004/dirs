@@ -1,0 +1,31 @@
+# LEGO Builder 3D Model File
+# Format: x y z type color
+version 1.0
+
+# Sample castle structure
+0 0 0 2x4 gray
+1.6 0 0 2x4 gray
+3.2 0 0 2x4 gray
+4.8 0 0 2x4 gray
+0 0 3.2 2x4 gray
+4.8 0 3.2 2x4 gray
+
+# Second layer
+0 0.96 0 2x4 gray
+1.6 0.96 0 2x4 gray
+3.2 0.96 0 2x4 gray
+4.8 0.96 0 2x4 gray
+0 0.96 3.2 2x4 gray
+4.8 0.96 3.2 2x4 gray
+
+# Windows (blue bricks)
+1.6 0.96 1.6 1x2 blue
+3.2 0.96 1.6 1x2 blue
+
+# Door (green brick)
+2.4 0 1.6 2x2 green
+
+# Tower
+0 1.92 0 2x2 red
+0 2.88 0 2x2 red
+0 3.84 0 1x1 yellow

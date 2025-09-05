@@ -1,4 +1,5 @@
 #include "LegoSystem.h"
+#include "ModelIO.h"
 #include <algorithm>
 #include <cmath>
 
@@ -112,8 +113,10 @@ std::unique_ptr<Mesh> Brick::createBrickMesh(BrickType type) {
 }
 
 // BrickSystem implementation
-BrickSystem::BrickSystem() : gridSize_(0.8f) {
+BrickSystem::BrickSystem() : gridSize_(0.8f), historyIndex_(0) {
     initializeBrickPrototypes();
+    // Save initial empty state
+    saveToHistory();
 }
 
 BrickSystem::~BrickSystem() = default;
@@ -130,17 +133,56 @@ void BrickSystem::initializeBrickPrototypes() {
 void BrickSystem::addBrick(const BrickInstance& brick) {
     if (isValidPlacement(brick)) {
         bricks_.push_back(brick);
+        saveToHistory();
     }
 }
 
 void BrickSystem::removeBrick(size_t index) {
     if (index < bricks_.size()) {
         bricks_.erase(bricks_.begin() + index);
+        saveToHistory();
     }
 }
 
 void BrickSystem::clear() {
     bricks_.clear();
+    saveToHistory();
+}
+
+void BrickSystem::undo() {
+    if (canUndo()) {
+        historyIndex_--;
+        bricks_ = history_[historyIndex_];
+    }
+}
+
+void BrickSystem::redo() {
+    if (canRedo()) {
+        historyIndex_++;
+        bricks_ = history_[historyIndex_];
+    }
+}
+
+bool BrickSystem::canUndo() const {
+    return historyIndex_ > 0;
+}
+
+bool BrickSystem::canRedo() const {
+    return historyIndex_ < history_.size() - 1;
+}
+
+bool BrickSystem::saveModel(const std::string& filename) const {
+    return ModelIO::saveModel(bricks_, filename);
+}
+
+bool BrickSystem::loadModel(const std::string& filename) {
+    std::vector<BrickInstance> loadedBricks;
+    if (ModelIO::loadModel(loadedBricks, filename)) {
+        bricks_ = loadedBricks;
+        saveToHistory();
+        return true;
+    }
+    return false;
 }
 
 void BrickSystem::render(const Shader& shader, const Mat4& view, const Mat4& projection) const {
@@ -183,6 +225,23 @@ bool BrickSystem::checkCollision(const BrickInstance& newBrick) const {
         }
     }
     return false;
+}
+
+void BrickSystem::saveToHistory() {
+    // Remove any redo history when adding a new state
+    if (historyIndex_ < history_.size() - 1) {
+        history_.erase(history_.begin() + historyIndex_ + 1, history_.end());
+    }
+    
+    // Add current state to history
+    history_.push_back(bricks_);
+    historyIndex_ = history_.size() - 1;
+    
+    // Limit history size
+    if (history_.size() > MAX_HISTORY) {
+        history_.erase(history_.begin());
+        historyIndex_--;
+    }
 }
 
 Vec3 getBrickColorRGB(BrickColor color) {

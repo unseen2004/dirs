@@ -9,6 +9,7 @@ This repository contains a collection of projects, experiments, and example impl
 - [**Python_jp**](./Python_jp) – Python variant with Japanese keywords.
 - [**cocktails-api**](./cocktails-api) – REST API backend for an example cocktail recipe website.
 - [**webserver_lru_cache_rdma**](./webserver_cache_rdma) – Webserver with LRU-cache and RDMI.
+- [**lego_builder_3d**](./lego_builder_3d) – 3D LEGO building game engine with OpenGL rendering.
 
 ---
 

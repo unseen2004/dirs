@@ -68,6 +68,16 @@ public:
     void removeBrick(size_t index);
     void clear();
     
+    // Undo/Redo functionality
+    void undo();
+    void redo();
+    bool canUndo() const;
+    bool canRedo() const;
+    
+    // Save/Load functionality
+    bool saveModel(const std::string& filename) const;
+    bool loadModel(const std::string& filename);
+    
     void render(const Shader& shader, const Mat4& view, const Mat4& projection) const;
     
     // Grid-based placement system
@@ -81,8 +91,14 @@ private:
     std::vector<std::unique_ptr<Brick>> brickPrototypes_;
     float gridSize_;
     
+    // Undo/Redo system
+    std::vector<std::vector<BrickInstance>> history_;
+    size_t historyIndex_;
+    static const size_t MAX_HISTORY = 50;
+    
     void initializeBrickPrototypes();
     bool checkCollision(const BrickInstance& newBrick) const;
+    void saveToHistory();
 };
 
 Vec3 getBrickColorRGB(BrickColor color);
