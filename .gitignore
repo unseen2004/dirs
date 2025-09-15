@@ -117,4 +117,10 @@ __pycache__/
 *.pyd
 *.egg-info/
 *.egg
-
+/target/
+**/*.rs.bk
+/.idea/
+/.vscode/
+*.iml
+.DS_Store
+*.log
